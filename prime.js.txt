@@ -1,14 +1,53 @@
-let num=13;
-fact=0;
-for(let x=1;x<=num;x++){
-  if(num%x==0){
-    fact++;
-}
-}
-if(fact==2)
+let limit=7;
+
+let flag=0;
+
+for(let i=2; i<=limit; i++)
+
 {
-  console.log("prime")
+
+    for(let j=2; j<=i/2; j++)
+
+    {
+
+        if(i%j==0)
+
+        {
+
+            flag++;
+
+        }       
+
+    }
+
+    if(flag==0)
+
+    {
+
+        console.log(i);
+
+    }
+
+    else
+
+    {
+
+       flag=0;
+
+    }
+
+    
+
 }
-else{
-  console.log("Not prime")
-}
+
+
+
+
+
+
+
+
+
+
+
+
